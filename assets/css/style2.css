@@ -1,6 +1,6 @@
 body {
     
-    background-color: pink;
+    background-color: #00b7eb;
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -56,7 +56,7 @@ body {
   
   /* Mega Menu header, if needed */
   .dropdown-content .header {
-    background: red;
+    background: #00b7eb;
     padding: 16px;
     color: white;
   }
