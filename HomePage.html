@@ -15,17 +15,7 @@
             <a href="#home" id="testapi">Home</a>
             <div>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-              <script>  $(document).ready(function() {
-
-                    $.getJSON('http://api.reliefweb.int/v1/jobs?preset=latest&filter[field]=status&filter', function(reliefResult) {
-                  
-                      reliefResult.data.forEach(function(record) {
-                        $('body').append('<div>' + record.fields.title + '</div>');
-                  
-                      });
-                  
-                    });
-                  });
+              <script>  
                 </script>
             </div>
             <a href="#news">News</a>
