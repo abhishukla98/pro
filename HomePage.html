@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/style2.css">
+    
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="#home" id="testapi">Home</a>
+            <div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+              <script>  $(document).ready(function() {
+
+                    $.getJSON('http://api.reliefweb.int/v1/jobs?preset=latest&filter[field]=status&filter', function(reliefResult) {
+                  
+                      reliefResult.data.forEach(function(record) {
+                        $('body').append('<div>' + record.fields.title + '</div>');
+                  
+                      });
+                  
+                    });
+                  });
+                </script>
+            </div>
+            <a href="#news">News</a>
+            <div class="dropdown">
+              <button class="dropbtn">Services
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <div class="header">
+                  <h2>Service Menu</h2>
+                </div>
+                <div class="row">
+                  <div class="column">
+                    <h3>Need help</h3>
+                    <a href="#">Veichle help</a>
+                    <a href="#">Food Help</a>
+                    <a href="#">Medicine Help</a>
+                  </div>
+                  <div class="column">
+                    <h3>Donate</h3>
+                    <a href="#">via UPI</a>
+                    <a href="#">via Credit card</a>
+                    <a href="#">via Debit card</a>
+                  </div>
+                  <div class="column">
+                    <h3>Volunteer</h3>
+                    <a href="#">TEST</a>
+                    <a href="#">TEST  2</a>
+                    <a href="#">TEST 3</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script src="assets/js/main2.js"></script>
+        
+    </body>
+</html>
